@@ -13,3 +13,9 @@ $ sdk install kotlin
 $ kotlinc hello.kt -include-runtime -d hello.jar
 $ java -jar hello.jar
 ```
+
+## Kotlin Notebook
+```bash
+$ pip install kotlin-jupyter-kernel
+```
+
