@@ -24,6 +24,11 @@ for (i in 10 downTo 1) {
     println(i)
 }
 
+for (i in 10 downTo 1 step 1) {
+    println(i)
+}
+
+
 // continue and break
 for (i in 1..10) {
     if (i % 2 == 0) {continue}
