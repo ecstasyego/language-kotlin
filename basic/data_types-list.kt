@@ -8,6 +8,8 @@ listobj.contains(1)
 listobj.size
 listobj.isEmpty()
 listobj.forEach{println(it)}
+listobj.first()
+listobj.last()
 
 
 
@@ -23,6 +25,8 @@ mlistobj.contains(1)
 mlistobj.size
 mlistobj.isEmpty()
 mlistobj.forEach{println(it)}
+mlistobj.first()
+mlistobj.last()
 
 mlistobj.add(6)
 mlistobj.add(0, 100)
