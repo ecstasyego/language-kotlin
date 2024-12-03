@@ -1,5 +1,6 @@
 // setOf
 val setobj00 = setOf(1, 1, 2, 3, 4, 5, 5, 5)
+setobj00.forEach{println(it)}
 setobj00.contains(1)
 setobj00.size
 setobj00.isEmpty()
@@ -14,6 +15,7 @@ setobj01.subtract(setobj02)
 
 // mutableSetOf: add, remove
 val msetobj00 = mutableSetOf(1, 1, 2, 3, 4, 5, 5, 5)
+msetobj00.forEach{println(it)}
 msetobj00.contains(1)
 msetobj00.size
 msetobj00.add(6)
