@@ -21,6 +21,7 @@ $ kotlinc-jvm
 ```
 
 ## Kotlin Notebook
+- https://github.com/Kotlin/kotlin-jupyter/tree/master
 ```bash
 $ pip install jupyterlab
 $ pip install kotlin-jupyter-kernel
