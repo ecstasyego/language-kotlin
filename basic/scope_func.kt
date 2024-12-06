@@ -17,13 +17,14 @@ also: it: self: object debuging
 
 
 
-// Example: also, apply
 class Person {
     var name: String = "John"
     var age: Int = 30
 }
 
 val person = Person()
+
+// Example: also, apply
 person.also{
     println(it.name)
     println(it.age)
@@ -38,6 +39,32 @@ person.apply{
     println(name)
     println(age)
 } // this
+
+
+// Example: let, run, with
+person.let{
+    println(it.name)
+    println(it.age)
+    it
+}
+
+person.let{ self ->
+    println(self.name)
+    println(self.age)
+    self
+}
+
+person.run{
+    println(name)
+    println(age)
+    this
+}
+
+with(person){
+    println(name)
+    println(age)
+    this
+}
 
 
 
