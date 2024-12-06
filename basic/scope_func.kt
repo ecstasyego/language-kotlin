@@ -6,6 +6,13 @@ apply: this: self: object initialization
 also: it: self: object debuging
 */
 
+val str:String = "ABC"
+
+str.let{it}
+str.run{this}
+str.apply{this}
+with(str){this}
+str.also{it}
 
 
 
