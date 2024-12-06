@@ -38,6 +38,8 @@ person.also{ self ->
 person.apply{
     println(name)
     println(age)
+    println(this.name)
+    println(this.age)
 } // this
 
 
@@ -46,25 +48,29 @@ person.let{
     println(it.name)
     println(it.age)
     it
-}
+} // it
 
 person.let{ self ->
     println(self.name)
     println(self.age)
     self
-}
+} // it
 
 person.run{
     println(name)
     println(age)
+    println(this.name)
+    println(this.age)
     this
-}
+} // this
 
 with(person){
     println(name)
     println(age)
+    println(this.name)
+    println(this.age)
     this
-}
+} // this
 
 
 
