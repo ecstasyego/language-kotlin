@@ -105,7 +105,11 @@ Supported libraries:
 ```
 
 
-## Packages
+### Packages
+```kotlin
+%use dataframe, ktor-client, kandy
+```
+
 - https://kotlin.github.io/dataframe/overview.html
 - https://kotlin.github.io/kandy/welcome.html
 - 
