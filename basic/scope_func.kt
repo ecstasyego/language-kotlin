@@ -19,3 +19,27 @@ str.also{it}
 
 
 
+// Example: also, apply
+class Person {
+    var name: String = "John"
+    var age: Int = 30
+}
+
+val person = Person()
+person.also{
+    println(it.name)
+    println(it.age)
+} // it
+
+person.also{ self ->
+    println(self.name)
+    println(self.age)
+} // it
+
+person.apply{
+    println(name)
+    println(age)
+} // this
+
+
+
