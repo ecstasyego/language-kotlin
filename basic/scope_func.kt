@@ -8,10 +8,13 @@ also: it: self: object debuging
 
 val str:String = "ABC"
 
+// return last expression in block
 str.let{it}
 str.run{this}
-str.apply{this}
 with(str){this}
+
+// return self
+str.apply{this}
 str.also{it}
 
 
