@@ -1,3 +1,11 @@
+val str:String = "ABC"
+
+str.let{it} // return last expression in block
+str.run{this} // return last expression in block
+with(str){this} // return last expression in block
+str.apply{this} // return self
+str.also{it} // return self
+
 /* Scope Function : Reference : Return : Usage 
 let: it: last expression in block: nullable object
 run: this: last expression in block: object
@@ -6,16 +14,6 @@ apply: this: self: object initialization
 also: it: self: object debuging
 */
 
-val str:String = "ABC"
-
-// return last expression in block
-str.let{it}
-str.run{this}
-with(str){this}
-
-// return self
-str.apply{this}
-str.also{it}
 
 
 
