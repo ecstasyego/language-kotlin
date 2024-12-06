@@ -104,3 +104,10 @@ Supported libraries:
     lets-plot (https://github.com/JetBrains/lets-plot-kotlin) - Kotlin API for Lets-Plot: multiplatform plotting library based on Grammar of Graphics
 ```
 
+
+## Packages
+- https://kotlin.github.io/dataframe/overview.html
+
+
+
+
