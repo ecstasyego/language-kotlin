@@ -26,7 +26,7 @@ $ pip install jupyterlab
 $ pip install kotlin-jupyter-kernel
 ```
 
-```kotlin
+```
 :help
 
 Kotlin Jupyter kernel.
