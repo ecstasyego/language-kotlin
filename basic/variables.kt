@@ -9,7 +9,7 @@ println(variable)
 
 
 // Initialization
-lateinit var late_variable:String
+lateinit var late_variable:String // ?(nullsafety): not working
 val late_value by lazy {"World"}  
 late_variable = "Hello" // Initialization
 late_value // Initialization
