@@ -2,8 +2,6 @@
 
 - by lazy, lateinit
 - const
-- abstract
-- interface
-- class
-- object
+- object, class
+- abstract, interface
 - suspend, async, await, launch, runBlocking
