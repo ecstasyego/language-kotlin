@@ -7,3 +7,4 @@
 - suspend
 - lateinit
 - by lazy
+- const
