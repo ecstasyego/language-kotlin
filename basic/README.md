@@ -6,4 +6,4 @@
 - interface
 - class
 - object
-- suspend, async, await
+- suspend, async, await, launch, runBlocking
