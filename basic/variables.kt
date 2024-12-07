@@ -1,8 +1,15 @@
 // Declaration
 var variable = "Alphabet"
-val constant = "Alphabet"
+val value = "Alphabet"
 println(variable)
-println(constant)
+println(value)
 
 variable = "alphabet"
 println(variable)
+
+
+// Initialization
+lateinit var late_variable:String
+val late_value by lazy {"World"}  
+late_variable = "Hello" // Initialization
+late_value // Initialization
