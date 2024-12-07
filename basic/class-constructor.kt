@@ -1,17 +1,17 @@
 class Structure01(var a:String, var b:Double){
-    constructor(a:String):this(a, 1.0){this}
-    constructor(b:Double):this("Y", b){this}
+    constructor(a:String):this(a, 1.0){}
+    constructor(b:Double):this("Y", b){}
 }
 
 class Structure02(var a:String, var b:Double=1.0){
-    constructor(b:Double):this("X", b){this}
+    constructor(b:Double):this("X", b){}
 }
 
 class Structure03(var a:String, var b:Double, var c:Int=100){
-    constructor(a:String):this(a, 1.0){this}
-    constructor(b:Double):this("X", b){this}
-    constructor(a:String, c:Int):this(a, 1.0, c){this}
-    constructor(b:Double, c:Int):this("X", b, c){this}
+    constructor(a:String):this(a, 1.0){}
+    constructor(b:Double):this("X", b){}
+    constructor(a:String, c:Int):this(a, 1.0, c){}
+    constructor(b:Double, c:Int):this("X", b, c){}
 }
 
 class Structure04(val a:String){
