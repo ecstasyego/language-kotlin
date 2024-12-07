@@ -1,10 +1,9 @@
 ## Keywords
 
+- by lazy, lateinit
+- const
 - abstract
 - interface
 - class
 - object
-- suspend
-- lateinit
-- by lazy
-- const
+- suspend, async, await
