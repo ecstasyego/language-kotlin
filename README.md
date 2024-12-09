@@ -12,9 +12,16 @@ $ kotlinc -version
 
 
 ## Compiler: kotlinc
+```kotlin
+fun main_func(){
+    println("Hello, World!")
+}
+
+main_func()
+```
 ```bash
-$ kotlinc hello.kt -include-runtime -d hello.jar
-$ java -jar hello.jar
+$ kotlinc main.kt -include-runtime -d main.jar
+$ java -jar main.jar
 ```
 
 ## Build System: Gradle
