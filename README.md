@@ -31,7 +31,43 @@ $ sdk install gradle
 $ gradle -v
 ```
 ### Kotlin Project with Gradle 
-
+`PROJECT STRUCTURE`
+```
+.
+├── app
+│   ├── build.gradle.kts
+│   └── src
+│       ├── main
+│       │   ├── kotlin
+│       │   │   └── org
+│       │   │       └── example
+│       │   │           └── App.kt
+│       │   └── resources
+│       └── test
+│           ├── kotlin
+│           │   └── org
+│           │       └── example
+│           │           └── AppTest.kt
+│           └── resources
+├── build
+│   └── reports
+│       └── problems
+│           └── problems-report.html
+├── gradle
+│   ├── libs.versions.toml
+│   └── wrapper
+│       ├── gradle-wrapper.jar
+│       └── gradle-wrapper.properties
+├── gradle.properties
+├── gradlew
+├── gradlew.bat
+└── settings.gradle.kts
+```
+```bash
+$ gradle init --type kotlin-application
+$ gradle build
+$ gradle run
+```
 
 
 ## Interactive Shell
