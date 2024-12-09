@@ -68,20 +68,24 @@ $ gradle init --type kotlin-application
 $ gradle build
 $ gradle run
 ```
+`BUILD STRUCTURE`
 ```
 .
-├── app
-:   └── build
-:       ├── classes
-:       │   └── kotlin
-:       │       ├── main
-:       │       │   ├── META-INF
+└── app
+    └── build
+        ├── classes
+        │   └── kotlin
+        │       ├── main
+        │       │   ├── META-INF
         │       │   └── org
         │       │       └── example
+        │       │           ├── App.class
+        │       │           └── AppKt.class
         │       └── test
         │           ├── META-INF
         │           └── org
         │               └── example
+        │                   └── AppTest.class
         ├── distributions
         ├── kotlin
         │   ├── compileKotlin
@@ -103,6 +107,7 @@ $ gradle run
         │       ├── classpath-snapshot
         │       └── local-state
         ├── libs
+        │   └── app.jar
         ├── reports
         │   └── tests
         │       └── test
@@ -111,6 +116,8 @@ $ gradle run
         │           ├── js
         │           └── packages
         ├── scripts
+        │   ├── app
+        │   └── app.bat
         ├── test-results
         │   └── test
         │       └── binary
