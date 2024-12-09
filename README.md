@@ -104,6 +104,12 @@ tasks.register<JavaExec>("run") {
 }
 ```
 
+3. Build
+```bash
+$ gradle clean
+$ gradle build
+$ gradle run
+```
 
 
 ## Interactive Shell
