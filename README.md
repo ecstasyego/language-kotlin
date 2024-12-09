@@ -7,14 +7,24 @@
 $ curl -s "https://get.sdkman.io" | bash
 $ source ~/.sdkman/bin/sdkman-init.sh
 $ sdk install kotlin
-$ sdk install gradle
+$ kotlinc -version
 ```
+
 
 ## Compiler: kotlinc
 ```bash
 $ kotlinc hello.kt -include-runtime -d hello.jar
 $ java -jar hello.jar
 ```
+
+## Build System: Gradle
+```bash
+$ sdk install gradle
+$ gradle -v
+```
+### Kotlin Project with Gradle 
+
+
 
 ## Interactive Shell
 ```bash
