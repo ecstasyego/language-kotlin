@@ -12,6 +12,7 @@ $ kotlinc -version
 
 
 ## Compiler: kotlinc
+`main.kt`
 ```kotlin
 fun main_func(){
     println("Hello, World!")
