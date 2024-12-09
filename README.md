@@ -83,11 +83,11 @@ plugins {
 }
 
 repositories {
-    mavenCentral()
+    mavenCentral() // ~/.m2/repository/
 }
 
 dependencies {
-    implementation(kotlin("stdlib-jdk8"))
+    implementation(kotlin("stdlib-jdk8")) // ~/.gradle/caches/
 }
 
 sourceSets {
