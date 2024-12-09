@@ -43,6 +43,7 @@ $ gradle -v
 # 'swift-application', 'swift-library'
 
 $ gradle init --type basic
+$ gradle clean
 $ gradle build
 $ gradle run
 ```
