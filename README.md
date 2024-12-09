@@ -31,100 +31,22 @@ $ sdk install gradle
 $ gradle -v
 ```
 ### Kotlin Project with Gradle 
-`PROJECT STRUCTURE`
-```
-.
-├── app
-│   ├── build.gradle.kts
-│   └── src
-│       ├── main
-│       │   ├── kotlin
-│       │   │   └── org
-│       │   │       └── example
-│       │   │           └── App.kt
-│       │   └── resources
-│       └── test
-│           ├── kotlin
-│           │   └── org
-│           │       └── example
-│           │           └── AppTest.kt
-│           └── resources
-├── build
-│   └── reports
-│       └── problems
-│           └── problems-report.html
-├── gradle
-│   ├── libs.versions.toml
-│   └── wrapper
-│       ├── gradle-wrapper.jar
-│       └── gradle-wrapper.properties
-├── gradle.properties
-├── gradlew
-├── gradlew.bat
-└── settings.gradle.kts
-```
+
 ```bash
+# [ gradle init --type ]
+# 'basic', 'pom'
+# 'cpp-application', 'cpp-library'
+# 'groovy-application', 'groovy-gradle-plugin', 'groovy-library'
+# 'java-application', 'java-gradle-plugin', 'java-library'
+# 'kotlin-application', 'kotlin-gradle-plugin', 'kotlin-library'
+# 'scala-application', 'scala-library'
+# 'swift-application', 'swift-library'
+
 $ gradle init --type kotlin-application
 $ gradle build
 $ gradle run
 ```
-`BUILD STRUCTURE`
-```
-.
-└── app
-    └── build
-        ├── classes
-        │   └── kotlin
-        │       ├── main
-        │       │   ├── META-INF
-        │       │   └── org
-        │       │       └── example
-        │       │           ├── App.class
-        │       │           └── AppKt.class
-        │       └── test
-        │           ├── META-INF
-        │           └── org
-        │               └── example
-        │                   └── AppTest.class
-        ├── distributions
-        ├── kotlin
-        │   ├── compileKotlin
-        │   │   ├── cacheable
-        │   │   │   └── caches-jvm
-        │   │   │       ├── inputs
-        │   │   │       ├── jvm
-        │   │   │       │   └── kotlin
-        │   │   │       └── lookups
-        │   │   ├── classpath-snapshot
-        │   │   └── local-state
-        │   └── compileTestKotlin
-        │       ├── cacheable
-        │       │   └── caches-jvm
-        │       │       ├── inputs
-        │       │       ├── jvm
-        │       │       │   └── kotlin
-        │       │       └── lookups
-        │       ├── classpath-snapshot
-        │       └── local-state
-        ├── libs
-        │   └── app.jar
-        ├── reports
-        │   └── tests
-        │       └── test
-        │           ├── classes
-        │           ├── css
-        │           ├── js
-        │           └── packages
-        ├── scripts
-        │   ├── app
-        │   └── app.bat
-        ├── test-results
-        │   └── test
-        │       └── binary
-        └── tmp
-            ├── jar
-            └── test
-```
+
 
 
 ## Interactive Shell
