@@ -99,7 +99,7 @@ sourceSets {
 }
 
 tasks.register<JavaExec>("run") {
-    mainClass.set("MainKt") // FILE: Main.kt
+    mainClass.set("MainKt") // FILE: Main.kt [NOTE: The first word of file name must be an upper case.]
     classpath = sourceSets["main"].runtimeClasspath
 }
 ```
