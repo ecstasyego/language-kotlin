@@ -71,8 +71,8 @@ $ gradle init --type basic
 
 2. Kotlin DSL: Gradle mianClass
 ```bash
-$ mkdir -p src/main/kotlin
-$ echo 'fun main(){println("Hello, World!")}' > src/main/kotlin/Main.kt
+$ mkdir -p src/main/kotlin # PATH
+$ echo 'fun main(){println("Hello, World!")}' > src/main/kotlin/Main.kt # FILE
 ```
 `build.gradle.kts`
 ```kts
