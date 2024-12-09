@@ -76,6 +76,8 @@ $ echo 'fun main(){println("Hello, World!")}' > src/main/kotlin/Main.kt # FILE
 ```
 `build.gradle.kts`
 ```kts
+import java.io.File
+
 plugins {
     kotlin("jvm") version "1.8.0"
 }
@@ -91,7 +93,7 @@ dependencies {
 sourceSets {
     main {
         kotlin {
-            srcDirs = listOf("src/main/kotlin") // PATH: src/main/kotlin
+            setSrcDirs(setOf(File("src/main/kotlin"))) // PATH: src/main/kotlin
         }
     }
 }
