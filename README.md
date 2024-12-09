@@ -48,6 +48,9 @@ $ gradle run
 ```
 
 1. Project Structure
+```bash
+$ gradle init --type basic
+```
 ```
 .
 ├── build
