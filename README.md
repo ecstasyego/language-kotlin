@@ -69,6 +69,40 @@ $ gradle init --type basic
 └── settings.gradle.kts
 ```
 
+2. Kotlin DSL: Gradle mianClass
+```bash
+$ mkdir -p src/main/kotlin
+$ echo 'fun main(){println("Hello, World!")}' > src/main/kotlin/Main.kt
+```
+`build.gradle.kts`
+```kts
+plugins {
+    kotlin("jvm") version "1.8.0"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation(kotlin("stdlib-jdk8"))
+}
+
+sourceSets {
+    main {
+        kotlin {
+            srcDirs = listOf("src/main/kotlin") // PATH: src/main/kotlin
+        }
+    }
+}
+
+tasks.register<JavaExec>("run") {
+    mainClass.set("MainKt") // FILE: Main.kt
+    classpath = sourceSets["main"].runtimeClasspath
+}
+```
+
+
 
 ## Interactive Shell
 ```bash
