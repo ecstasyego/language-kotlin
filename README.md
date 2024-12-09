@@ -69,7 +69,7 @@ $ gradle init --type basic
 └── settings.gradle.kts
 ```
 
-2. Kotlin DSL: Gradle mianClass
+2. Kotlin DSL: PATH, FILE
 ```bash
 $ mkdir -p src/main/kotlin # PATH
 $ echo 'fun main(){println("Hello, World!")}' > src/main/kotlin/Main.kt # FILE
