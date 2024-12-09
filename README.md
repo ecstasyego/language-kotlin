@@ -42,11 +42,29 @@ $ gradle -v
 # 'scala-application', 'scala-library'
 # 'swift-application', 'swift-library'
 
-$ gradle init --type kotlin-application
+$ gradle init --type basic
 $ gradle build
 $ gradle run
 ```
 
+1. Project Structure
+```
+.
+├── build
+│   └── reports
+│       └── problems
+│           └── problems-report.html
+├── build.gradle.kts
+├── gradle
+│   ├── libs.versions.toml
+│   └── wrapper
+│       ├── gradle-wrapper.jar
+│       └── gradle-wrapper.properties
+├── gradle.properties
+├── gradlew
+├── gradlew.bat
+└── settings.gradle.kts
+```
 
 
 ## Interactive Shell
