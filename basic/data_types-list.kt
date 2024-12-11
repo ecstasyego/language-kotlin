@@ -35,3 +35,22 @@ mlistobj.remove(1) // only first one
 mlistobj.removeAt(0)
 mlistobj.removeAll(listOf(100,200)) // with duplication
 mlistobj
+
+
+
+fun process01():List<String>{
+    return listOf("US", "UK")
+}
+
+fun process02():List<Char>{
+    return listOf('A', 'B', 'C')
+}
+
+fun process03():List<Int>{
+    return listOf(1, 2, 3)
+}
+
+fun process04():List<Double>{
+    return listOf(1.0, 2.0, 3.0)
+}
+
