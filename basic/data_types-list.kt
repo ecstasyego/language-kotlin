@@ -10,6 +10,7 @@ listobj.isEmpty()
 listobj.forEach{println(it)}
 listobj.first()
 listobj.last()
+listobj.toMutableList()
 
 List(6) { 0 }
 List(6) { it }
@@ -56,6 +57,7 @@ mlistobj.isEmpty()
 mlistobj.forEach{println(it)}
 mlistobj.first()
 mlistobj.last()
+mlistobj.toList()
 
 mlistobj.add(6)
 mlistobj.add(0, 100)
