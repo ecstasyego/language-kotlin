@@ -23,6 +23,11 @@ Array(6) { 0 }
 Array(6) { it }
 Array(6) { idx -> idx }
 
+Array<Int>(5) {100}
+Array<Double>(5) {100.0}
+Array<String>(5) {"Alphabet"}
+Array<Boolean>(5) {true}
+
 intArrayOf(1,2,3,4,5)
 doubleArrayOf(1.0, 2.0, 3.0, 4.0, 5.0)
 charArrayOf('a', 'b', 'c', 'd')
