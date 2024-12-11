@@ -46,7 +46,7 @@ List<Int>(5) {100}
 List<Double>(5) {100.0}
 List<String>(5) {"Alphabet"}
 List<Boolean>(5) {true}
-List<Int>(5) {100}
+
 
 fun process01():List<String>{
     return mutableListOf("US", "UK")
