@@ -37,8 +37,7 @@ mlistobj.removeAll(listOf(100,200)) // with duplication
 mlistobj
 
 
-// List Interfaces
-
+// Mutable List Interfaces
 List(6) { 0 }
 List(6) { it }
 List(6) { idx -> idx }
@@ -50,18 +49,18 @@ List<Boolean>(5) {true}
 List<Int>(5) {100}
 
 fun process01():List<String>{
-    return listOf("US", "UK")
+    return mutableListOf("US", "UK")
 }
 
 fun process02():List<Char>{
-    return listOf('A', 'B', 'C')
+    return mutableListOf('A', 'B', 'C')
 }
 
 fun process03():List<Int>{
-    return listOf(1, 2, 3)
+    return mutableListOf(1, 2, 3)
 }
 
 fun process04():List<Double>{
-    return listOf(1.0, 2.0, 3.0)
+    return mutableListOf(1.0, 2.0, 3.0)
 }
 
