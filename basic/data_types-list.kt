@@ -1,4 +1,4 @@
-// listOf
+// listOf: class java.util.Arrays$ArrayList
 val listobj = listOf(1, 1, 2, 3, 4, 5, 5, 5)
 listobj.indexOf(3) // index
 listobj[0] // value
@@ -13,7 +13,7 @@ listobj.last()
 
 
 
-// mutableListOf
+// mutableListOf: class java.util.ArrayList
 val mlistobj = mutableListOf(1, 1, 2, 3, 4, 5, 5, 5)
 mlistobj.indexOf(5) // index
 mlistobj[0] // value
