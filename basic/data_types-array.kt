@@ -6,7 +6,9 @@ arr[3] = 100
 arr[4] = 100
 arr[5] = 100
 arr.size
+
 arr.joinToString()
+arr.toList()
 arr.map{it.toDouble()}.toDoubleArray()
 
 for (idx in 0..arr.size) {println(idx)}
