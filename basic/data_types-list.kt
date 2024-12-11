@@ -37,6 +37,17 @@ mlistobj.removeAll(listOf(100,200)) // with duplication
 mlistobj
 
 
+// List Interfaces
+
+List(6) { 0 }
+List(6) { it }
+List(6) { idx -> idx }
+
+List<Int>(5) {100}
+List<Double>(5) {100.0}
+List<String>(5) {"Alphabet"}
+List<Boolean>(5) {true}
+List<Int>(5) {100}
 
 fun process01():List<String>{
     return listOf("US", "UK")
