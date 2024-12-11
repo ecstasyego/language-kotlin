@@ -18,7 +18,7 @@ arr.forEach{println(it)}
 arr.forEach{element -> println(element)}
 
 
-// Array User Interfaces
+// Array Interfaces
 Array(6) { 0 }
 Array(6) { it }
 Array(6) { idx -> idx }
@@ -32,3 +32,8 @@ intArrayOf(1,2,3,4,5)
 doubleArrayOf(1.0, 2.0, 3.0, 4.0, 5.0)
 charArrayOf('a', 'b', 'c', 'd')
 booleanArrayOf(true, false)
+
+
+fun process():Array<Char>{
+    return arrayOf('a', 'b', 'c')
+}
