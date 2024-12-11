@@ -11,6 +11,35 @@ listobj.forEach{println(it)}
 listobj.first()
 listobj.last()
 
+List(6) { 0 }
+List(6) { it }
+List(6) { idx -> idx }
+
+List<Int>(5) {100}
+List<Double>(5) {100.0}
+List<String>(5) {"Alphabet"}
+List<Boolean>(5) {true}
+
+
+fun process01():List<String>{
+    return listOf("US", "UK")
+}
+
+fun process02():List<Char>{
+    return listOf('A', 'B', 'C')
+}
+
+fun process03():List<Int>{
+    return listOf(1, 2, 3)
+}
+
+fun process04():List<Double>{
+    return listOf(1.0, 2.0, 3.0)
+}
+
+
+
+
 
 
 // mutableListOf: class java.util.ArrayList
@@ -34,33 +63,30 @@ mlistobj.addAll(listOf(100, 100, 200))
 mlistobj.remove(1) // only first one
 mlistobj.removeAt(0)
 mlistobj.removeAll(listOf(100,200)) // with duplication
-mlistobj
 
 
-// Mutable List Interfaces
-List(6) { 0 }
-List(6) { it }
-List(6) { idx -> idx }
+MutableList(6) { 0 }
+MutableList(6) { it }
+MutableList(6) { idx -> idx }
 
-List<Int>(5) {100}
-List<Double>(5) {100.0}
-List<String>(5) {"Alphabet"}
-List<Boolean>(5) {true}
+MutableList<Int>(5) {100}
+MutableList<Double>(5) {100.0}
+MutableList<String>(5) {"Alphabet"}
+MutableList<Boolean>(5) {true}
 
-
-fun process01():List<String>{
+fun process05():MutableList<String>{
     return mutableListOf("US", "UK")
 }
 
-fun process02():List<Char>{
+fun process06():MutableList<Char>{
     return mutableListOf('A', 'B', 'C')
 }
 
-fun process03():List<Int>{
+fun process07():MutableList<Int>{
     return mutableListOf(1, 2, 3)
 }
 
-fun process04():List<Double>{
+fun process08():MutableList<Double>{
     return mutableListOf(1.0, 2.0, 3.0)
 }
 
