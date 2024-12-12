@@ -7,6 +7,7 @@ List<Int>(5) {100}
 List<Double>(5) {100.0}
 List<String>(5) {"Alphabet"}
 List<Boolean>(5) {true}
+List<Boolean?>(5){null}
 
 val listobj = listOf(1, 1, 2, 3, 4, 5, 5, 5)
 listobj.indexOf(3) // index
@@ -55,6 +56,7 @@ MutableList<Int>(5) {100}
 MutableList<Double>(5) {100.0}
 MutableList<String>(5) {"Alphabet"}
 MutableList<Boolean>(5) {true}
+MutableList<Boolean?>(5) {null}
 
 val mlistobj = mutableListOf(1, 1, 2, 3, 4, 5, 5, 5)
 mlistobj.indexOf(5) // index
