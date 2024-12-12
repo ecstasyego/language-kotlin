@@ -2,8 +2,9 @@
 mapOf<String, Int>() // empty mapOf object
 mapOf("one" to 1, "two" to 2, "three" to 3)
 mapOf<String, Int>("one" to 1, "two" to 2, "three" to 3)
-val mapobj = mapOf("one" to 1, "two" to 2, "three" to 3)
+listOf("one", "two", "three").zip(listOf(1, 2, 3)).toMap()
 
+val mapobj = mapOf("one" to 1, "two" to 2, "three" to 3)
 mapobj["one"]
 mapobj["two"]
 mapobj["three"]
@@ -28,8 +29,9 @@ mapobj.isEmpty()
 mutableMapOf<String, Int>() // empty mutableMapOf object
 mutableMapOf("one" to 1, "two" to 2, "three" to 3)
 mutableMapOf<String, Int>("one" to 1, "two" to 2, "three" to 3)
-val mmapobj = mutableMapOf("one" to 1, "two" to 2, "three" to 3)
+listOf("one", "two", "three").zip(listOf(1, 2, 3)).toMap().toMutableMap()
 
+val mmapobj = mutableMapOf("one" to 1, "two" to 2, "three" to 3)
 mmapobj["one"]
 mmapobj["two"]
 mmapobj["three"]
