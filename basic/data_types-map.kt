@@ -16,6 +16,9 @@ mapobj.containsValue(1)
 mapobj.keys
 mapobj.values
 mapobj.forEach{(key, value) -> println(key + ", " + value)}
+mapobj.map{it}
+mapobj.map{it.key}
+mapobj.map{it.value}
 mapobj.mapValues{it.key.uppercase()}
 mapobj.mapValues{it.value + 1}
 mapobj.filter{it.key == "three"}
@@ -50,6 +53,9 @@ mmapobj.containsValue(1)
 mmapobj.keys
 mmapobj.values
 mmapobj.forEach{(key, value) -> println(key + ", " + value)}
+mmapobj.map{it}
+mmapobj.map{it.key}
+mmapobj.map{it.value}
 mmapobj.mapValues{it.key.uppercase()}
 mmapobj.mapValues{it.value + 1}
 mmapobj.filter{it.key == "three"}
