@@ -45,6 +45,14 @@ fun process04():List<Double>{
 
 
 // mutableListOf: class java.util.ArrayList
+MutableList(6) { 0 }
+MutableList(6) { it }
+MutableList(6) { idx -> idx }
+MutableList<Int>(5) {100}
+MutableList<Double>(5) {100.0}
+MutableList<String>(5) {"Alphabet"}
+MutableList<Boolean>(5) {true}
+
 val mlistobj = mutableListOf(1, 1, 2, 3, 4, 5, 5, 5)
 mlistobj.indexOf(5) // index
 mlistobj[0] // value
@@ -58,6 +66,7 @@ mlistobj.isEmpty()
 mlistobj.forEach{println(it)}
 mlistobj.first()
 mlistobj.last()
+mlistobj.reversed()
 mlistobj.toList()
 
 mlistobj.add(6)
@@ -68,14 +77,6 @@ mlistobj.removeAt(0)
 mlistobj.removeAll(listOf(100,200)) // with duplication
 
 
-MutableList(6) { 0 }
-MutableList(6) { it }
-MutableList(6) { idx -> idx }
-
-MutableList<Int>(5) {100}
-MutableList<Double>(5) {100.0}
-MutableList<String>(5) {"Alphabet"}
-MutableList<Boolean>(5) {true}
 
 fun process05():MutableList<String>{
     return mutableListOf("US", "UK")
