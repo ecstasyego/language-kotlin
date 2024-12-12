@@ -1,3 +1,4 @@
+data class Tuple<T0, T1, T2>(val C0:T0, val C1:T1, val C2:T2) 
 
 val mlist0 = mutableListOf<Any>()
 mlist0.add(0)
@@ -17,9 +18,6 @@ mlist0.zip(0..<mlist0.size).unzip().second
 mlist0.zip(0..<mlist0.size).toList()
 mlist0.zip(0..<mlist0.size).toMap()
 
-
-
-data class Tuple<T0, T1, T2>(val C0:T0, val C1:T1, val C2:T2) 
 val mlist1 = mutableListOf<Tuple<Int, String, String>>()
 mlist1.add(Tuple(0, "A", "B"))
 mlist1.add(Tuple(100, "B", "B"))
@@ -36,8 +34,6 @@ mlist1.zip(0..<mlist1.size).map{it.first.C2}
 mlist1.zip(0..<mlist1.size).map{it.second}
 mlist1.zip(0..<mlist1.size).map{it.second}
 mlist1.zip(0..<mlist1.size).map{it.second}
-
-
 
 val mmap0 = mutableMapOf<String, Any>()
 mmap0["A"] = 0
