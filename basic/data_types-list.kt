@@ -14,6 +14,7 @@ listobj.indexOf(3) // index
 listobj[0] // value
 listobj[1] // value
 listobj.subList(1,4)
+listobj.slice(1..<4)
 listobj.contains(1)
 listobj.size
 listobj.isEmpty()
@@ -65,6 +66,7 @@ mlistobj[1] // value
 mlistobj[0] = -1
 mlistobj[1] = -2
 mlistobj.subList(1,4)
+mlistobj.slice(1..<4)
 mlistobj.contains(1)
 mlistobj.size
 mlistobj.isEmpty()
