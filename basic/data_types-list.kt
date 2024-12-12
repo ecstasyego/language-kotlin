@@ -10,6 +10,7 @@ listobj.isEmpty()
 listobj.forEach{println(it)}
 listobj.first()
 listobj.last()
+listobj.reversed()
 listobj.toMutableList()
 
 List(6) { 0 }
