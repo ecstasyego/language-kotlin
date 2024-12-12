@@ -4,6 +4,12 @@
 1 until 11
 10 downTo 1
 
+(1..10).map{it}
+(1..<11).map{it}
+(1 until 11).map{it}
+(10 downTo 1).map{it}
+
+
 // mapper example01[target, mapper, values]
 val values01 = {
     val target = listOf(0, 1, 4, 4, 3, 1, 3, 2, 4, 1, 1, 0, 0)
