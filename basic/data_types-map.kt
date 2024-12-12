@@ -1,5 +1,8 @@
 // mapOf
+mapOf("one" to 1, "two" to 2, "three" to 3)
+mapOf<String, Int>("one" to 1, "two" to 2, "three" to 3)
 val mapobj = mapOf("one" to 1, "two" to 2, "three" to 3)
+
 mapobj["one"]
 mapobj["two"]
 mapobj["three"]
@@ -18,8 +21,13 @@ mapobj.filter{it.value % 2 == 0}
 mapobj.size
 mapobj.isEmpty()
 
+
+
 // mutableMapOf
+mutableMapOf("one" to 1, "two" to 2, "three" to 3)
+mutableMapOf<String, Int>("one" to 1, "two" to 2, "three" to 3)
 val mmapobj = mutableMapOf("one" to 1, "two" to 2, "three" to 3)
+
 mmapobj["one"]
 mmapobj["two"]
 mmapobj["three"]
