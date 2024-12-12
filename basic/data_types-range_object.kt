@@ -9,6 +9,15 @@
 (1 until 11).map{it}
 (10 downTo 1).map{it}
 
+val target = (10..30).toList()
+val index = (0..<target.size).toList()
+val series = index.zip(target).toMap()
+series.map{if (it.value > 20) "A" else "B"}
+
+val mapper = mapOf(0 to false, 1 to true)
+series.map{mapper[it.key] is Boolean}
+series.map{mapper[it.key] !is Boolean}
+
 
 // mapper example01[target, mapper, values]
 val values01 = {
@@ -32,3 +41,5 @@ val values02 = {
     series.forEach{(idx, value) -> values[idx] = mapper[value % 2]}
     values    
 }()
+
+
