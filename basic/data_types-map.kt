@@ -64,3 +64,11 @@ mmapobj.filter{it.value % 2 == 0}
 mmapobj.size
 mmapobj.clear()
 mmapobj.isEmpty()
+
+// dictionary
+val dictionary = mutableMapOf<String, Any>()
+dictionary["age"] = 25
+dictionary["name"] = "John"
+val age = dictionary["age"] as Int
+val name = dictionary["name"] as String
+
