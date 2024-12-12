@@ -30,6 +30,7 @@ mapobj.isEmpty()
 
 // mutableMapOf
 mutableMapOf<String, Int>() // empty mutableMapOf object
+mutableMapOf<String, Any>() // dictionary
 mutableMapOf("one" to 1, "two" to 2, "three" to 3)
 mutableMapOf<String, Int>("one" to 1, "two" to 2, "three" to 3)
 listOf("one", "two", "three").zip(listOf(1, 2, 3)).toMap().toMutableMap()
