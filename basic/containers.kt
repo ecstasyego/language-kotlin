@@ -1,3 +1,4 @@
+import kotlin.random.Random
 data class Tuple<T0, T1, T2>(val C0:T0, val C1:T1, val C2:T2) 
 
 val mlist0 = mutableListOf<Any>()
@@ -45,3 +46,17 @@ mmap0.map{it.key}
 mmap0.map{it.value}
 mmap0.filter{it.key in mmap0.keys}
 mmap0.filter{it.value in mmap0.values}
+
+val mmap1 = mutableMapOf<String, List<Int>>()
+mmap1["C0"] = (0..<100).toList()
+mmap1["C1"] = (0..<100).reversed().toList()
+mmap1["C2"] = (100..<200).toList()
+
+val mmap2 = mutableMapOf<String, List<Double>>()
+mmap2["C0"] = DoubleArray(10) { Random.nextDouble(-3.14, 3.14) }.toList()
+mmap2["C1"] = DoubleArray(10) { Random.nextDouble(-3.14, 3.14) }.toList()
+mmap2["C2"] = DoubleArray(10) { Random.nextDouble(-3.14, 3.14) }.toList()
+
+val mmap3 = mutableMapOf<String, Tuple<Int, String, String>>()
+
+val mmap4 = mutableMapOf<String, Tuple<List<Int>, List<Double>, List<Double>>>()
