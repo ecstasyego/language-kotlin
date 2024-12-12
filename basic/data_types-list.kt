@@ -16,7 +16,8 @@ listobj.subList(1,4)
 listobj.contains(1)
 listobj.size
 listobj.isEmpty()
-listobj.forEach{println(it)}
+listobj.forEach{it}
+listobj.let{it}
 listobj.first()
 listobj.last()
 listobj.reversed()
@@ -65,7 +66,8 @@ mlistobj.subList(1,4)
 mlistobj.contains(1)
 mlistobj.size
 mlistobj.isEmpty()
-mlistobj.forEach{println(it)}
+mlistobj.forEach{it}
+mlistobj.let{it}
 mlistobj.first()
 mlistobj.last()
 mlistobj.reversed()
