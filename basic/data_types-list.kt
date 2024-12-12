@@ -2,6 +2,7 @@
 List(6) { 0 }
 List(6) { it }
 List(6) { idx -> idx }
+List(6){ it == 3 }
 List<Int>(5) {100}
 List<Double>(5) {100.0}
 List<String>(5) {"Alphabet"}
@@ -48,6 +49,7 @@ fun process04():List<Double>{
 MutableList(6) { 0 }
 MutableList(6) { it }
 MutableList(6) { idx -> idx }
+MutableList(6){ it == 3 }
 MutableList<Int>(5) {100}
 MutableList<Double>(5) {100.0}
 MutableList<String>(5) {"Alphabet"}
