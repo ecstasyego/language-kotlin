@@ -1,4 +1,12 @@
 // listOf: class java.util.Arrays$ArrayList
+List(6) { 0 }
+List(6) { it }
+List(6) { idx -> idx }
+List<Int>(5) {100}
+List<Double>(5) {100.0}
+List<String>(5) {"Alphabet"}
+List<Boolean>(5) {true}
+
 val listobj = listOf(1, 1, 2, 3, 4, 5, 5, 5)
 listobj.indexOf(3) // index
 listobj[0] // value
@@ -13,14 +21,6 @@ listobj.last()
 listobj.reversed()
 listobj.toMutableList()
 
-List(6) { 0 }
-List(6) { it }
-List(6) { idx -> idx }
-
-List<Int>(5) {100}
-List<Double>(5) {100.0}
-List<String>(5) {"Alphabet"}
-List<Boolean>(5) {true}
 
 
 fun process01():List<String>{
