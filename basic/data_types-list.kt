@@ -17,6 +17,7 @@ listobj.contains(1)
 listobj.size
 listobj.isEmpty()
 listobj.forEach{it}
+listobj.map{it}
 listobj.first()
 listobj.last()
 listobj.reversed()
@@ -66,6 +67,7 @@ mlistobj.contains(1)
 mlistobj.size
 mlistobj.isEmpty()
 mlistobj.forEach{it}
+mlistobj.map{it}
 mlistobj.first()
 mlistobj.last()
 mlistobj.reversed()
