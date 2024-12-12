@@ -1,4 +1,5 @@
 // mapOf
+mapOf<String, Int>() // empty mapOf object
 mapOf("one" to 1, "two" to 2, "three" to 3)
 mapOf<String, Int>("one" to 1, "two" to 2, "three" to 3)
 val mapobj = mapOf("one" to 1, "two" to 2, "three" to 3)
@@ -24,6 +25,7 @@ mapobj.isEmpty()
 
 
 // mutableMapOf
+mutableMapOf<String, Int>() // empty mutableMapOf object
 mutableMapOf("one" to 1, "two" to 2, "three" to 3)
 mutableMapOf<String, Int>("one" to 1, "two" to 2, "three" to 3)
 val mmapobj = mutableMapOf("one" to 1, "two" to 2, "three" to 3)
