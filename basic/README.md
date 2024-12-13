@@ -6,7 +6,7 @@
 - inner
 - abstract, interface
 - suspend, async, await, launch, runBlocking
-- Thread, runnable
+- Thread, runnable, run
 
 ## Build
 
