@@ -53,10 +53,23 @@ mmap1["C1"] = (0..<100).reversed().toList()
 mmap1["C2"] = (100..<200).toList()
 
 val mmap2 = mutableMapOf<String, List<Double>>()
-mmap2["C0"] = DoubleArray(10) { Random.nextDouble(-3.14, 3.14) }.toList()
-mmap2["C1"] = DoubleArray(10) { Random.nextDouble(-3.14, 3.14) }.toList()
-mmap2["C2"] = DoubleArray(10) { Random.nextDouble(-3.14, 3.14) }.toList()
+mmap2["C0"] = Array(10) { Random.nextDouble(-3.14, 3.14) }.toList()
+mmap2["C1"] = Array(10) { Random.nextDouble(-3.14, 3.14) }.toList()
+mmap2["C2"] = Array(10) { Random.nextDouble(-3.14, 3.14) }.toList()
+mmap2["C3"] = Array(10) { Random.nextDouble(-3.14, 3.14) }.toList()
 
 val mmap3 = mutableMapOf<String, Tuple<Int, String, String>>()
+mmap3["R0"] = Tuple(0, "A", "B")
+mmap3["R1"] = Tuple(100, "C", "B")
+mmap3["R2"] = Tuple(200, "B", "B")
+mmap3["R0"]?.C0; mmap3["R0"]?.C1; mmap3["R0"]?.C2
+mmap3["R1"]?.C0; mmap3["R1"]?.C1; mmap3["R1"]?.C2
+mmap3["R2"]?.C0; mmap3["R2"]?.C1; mmap3["R2"]?.C2
 
 val mmap4 = mutableMapOf<String, Tuple<List<Int>, List<Double>, List<Double>>>()
+mmap4["M0"] = Tuple(Array(10) { Random.nextInt(0, 10) }.toList(), Array(10) { Random.nextDouble(-3.14, 3.14) }.toList(), Array(10) { Random.nextDouble(-3.14, 3.14) }.toList()) 
+mmap4["M1"] = Tuple(Array(10) { Random.nextInt(0, 10) }.toList(), Array(10) { Random.nextDouble(-3.14, 3.14) }.toList(), Array(10) { Random.nextDouble(-3.14, 3.14) }.toList()) 
+mmap4["M2"] = Tuple(Array(10) { Random.nextInt(0, 10) }.toList(), Array(10) { Random.nextDouble(-3.14, 3.14) }.toList(), Array(10) { Random.nextDouble(-3.14, 3.14) }.toList()) 
+mmap4["M0"]?.C0; mmap4["M0"]?.C1; mmap4["M0"]?.C2
+mmap4["M1"]?.C0; mmap4["M1"]?.C1; mmap4["M1"]?.C2
+mmap4["M2"]?.C0; mmap4["M2"]?.C1; mmap4["M2"]?.C2
