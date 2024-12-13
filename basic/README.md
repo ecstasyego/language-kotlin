@@ -24,6 +24,7 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib-jdk8")) // ~/.gradle/caches/
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.0")
 }
 
 sourceSets {
