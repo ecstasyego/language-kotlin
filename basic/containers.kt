@@ -36,6 +36,9 @@ mlist1.zip(0..<mlist1.size).map{it.second}
 mlist1.zip(0..<mlist1.size).map{it.second}
 mlist1.zip(0..<mlist1.size).map{it.second}
 
+val mlist2 = mutableListOf<Map<String, Any>>()
+
+
 val mmap0 = mutableMapOf<String, Any>()
 mmap0["A"] = 0
 mmap0["B"] = 1
