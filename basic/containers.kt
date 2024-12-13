@@ -71,10 +71,13 @@ mmap1["C1"] = (0..<100).reversed().toList()
 mmap1["C2"] = (100..<200).toList()
 
 val mmap2 = mutableMapOf<String, List<Any>>()
-mmap2["C0"] = Array(10) { Random.nextInt(0, 10) }.toList()
-mmap2["C1"] = Array(10) { Random.nextDouble(-3.14, 3.14) }.toList()
-mmap2["C2"] = Array(10) { Random.nextBoolean() }.toList()
-mmap2["C3"] = Array(10) { Random.nextDouble(-3.14, 3.14) }.toList()
+mmap2["C0"] = Array(5) { Random.nextInt(0, 10) }.toList()
+mmap2["C1"] = Array(5) { Random.nextDouble(-3.14, 3.14) }.toList()
+mmap2["C2"] = Array(5) { Random.nextBoolean() }.toList()
+mmap2["C3"] = Array(5) { Random.nextDouble(-3.14, 3.14) }.toList()
+for (col in mmap2.keys){
+    println(mmap2[col]!!.joinToString())
+}
 
 val mmap3 = mutableMapOf<String, Tuple<Int, String, String>>()
 mmap3["R0"] = Tuple(0, "A", "B")
