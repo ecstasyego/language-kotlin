@@ -37,6 +37,21 @@ mlist1.zip(0..<mlist1.size).map{it.second}
 mlist1.zip(0..<mlist1.size).map{it.second}
 
 val mlist2 = mutableListOf<Map<String, Any>>()
+mlist2.add(mapOf("C0" to 1, "C1" to 0, "C2" to 3))
+mlist2.add(mapOf("C0" to 2, "C1" to 3, "C2" to 4))
+mlist2.add(mapOf("C0" to 0, "C1" to 0, "C2" to 0))
+
+mlist2[0]["C0"]; mlist2[0]["C1"]; mlist2[0]["C2"]
+mlist2[1]["C0"]; mlist2[1]["C1"]; mlist2[1]["C2"]
+mlist2[2]["C0"]; mlist2[2]["C1"]; mlist2[2]["C2"]
+
+for (row in mlist2){
+    println(row.values.joinToString())
+    println(row["C0"])
+    println(row["C1"])
+    println(row["C2"])
+}
+
 
 
 val mmap0 = mutableMapOf<String, Any>()
