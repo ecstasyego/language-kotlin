@@ -7,3 +7,4 @@ class Structure(vararg val params: String) {
 }
 
 Structure("Hello", "World", "Kotlin")
+Structure(*listOf("Hello", "World", "Kotlin").toTypedArray())
