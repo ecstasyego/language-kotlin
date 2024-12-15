@@ -13,7 +13,7 @@ keys.zip(values)
 // map of pair 
 val map0 = mapOf(Pair("Alice", 90), Pair("Bob", 80), Pair("Charlie", 70))
 map0.keys.zip(map0.values).toMap()
-
+map0.map{it.toPair()}.toMap()
 
 
 
