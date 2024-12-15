@@ -111,6 +111,10 @@ Array(3) { row -> Array(3) { col -> Random.nextBoolean() } }
 Array(3) { row -> Array(3) { col -> Random.nextInt(0, 10) } }
 Array(3) { row -> Array(3) { col -> Random.nextDouble(-3.14, 3.14) } }
 
+// Merge Array
+val arr:Array<Array<Int>> = Array(5){Array(10){Random.nextInt(0, 10)}}
+arrayOf(arr[0], arr[1], arr[2], arr[3], arr[4]) // Transpose Array
+
 
 fun process():Array<Char>{
     return arrayOf('a', 'b', 'c')
