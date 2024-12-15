@@ -5,6 +5,17 @@ pair1.second
 pair2.first
 pair2.second
 
+// list of pair 
+val list0 = listOf(Pair("Alice", 90), Pair("Bob", 80), Pair("Charlie", 70))
+val (keys, values) = list0.unzip()
+keys.zip(values)
+
+// map of pair 
+val map0 = mapOf(Pair("Alice", 90), Pair("Bob", 80), Pair("Charlie", 70))
+map0.keys.zip(map0.values).toMap()
+
+
+
 
 
 // from list
@@ -22,6 +33,8 @@ val mmap2 = zipped2.toMap().toMutableMap()
 
 val (keys1, values1) = zipped1.unzip()
 val (keys2, values2) = zipped2.unzip()
+
+
 
 
 
