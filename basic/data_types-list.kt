@@ -44,7 +44,12 @@ fun process04():List<Double>{
     return listOf(1.0, 2.0, 3.0)
 }
 
+fun merge(vararg params: Any): List<Any> {
+    return params.toList()
+}
 
+val mergedList00 = merge(listOf("A", "B", "C"), listOf(1,2,3), listOf(0.0, 0.0, 0.0))
+val mergedList01 = listOf(listOf("A", "B", "C"), listOf(1,2,3), listOf(0.0, 0.0, 0.0))
 
 
 
