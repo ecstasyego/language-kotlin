@@ -20,6 +20,7 @@ listobj.size
 listobj.isEmpty()
 listobj.forEach{it}
 listobj.map{it}
+listobj.flatMap{listOf(it)}
 listobj.first()
 listobj.last()
 listobj.reversed()
@@ -66,15 +67,16 @@ mlistobj[1] // value
 mlistobj[0] = -1
 mlistobj[1] = -2
 mlistobj.subList(1,4)
-mlistobj.slice(1..<4)
+mlistobj.slice(1..<4).toMutableList()
 mlistobj.contains(1)
 mlistobj.size
 mlistobj.isEmpty()
 mlistobj.forEach{it}
-mlistobj.map{it}
+mlistobj.map{it}.toMutableList()
+mlistobj.flatMap{listOf(it)}.toMutableList()
 mlistobj.first()
 mlistobj.last()
-mlistobj.reversed()
+mlistobj.reversed().toMutableList()
 mlistobj.toList()
 
 mlistobj.add(6)
