@@ -16,10 +16,12 @@ mapobj.containsValue(1)
 mapobj.keys
 mapobj.values
 mapobj.forEach{(key, value) -> println(key + ", " + value)}
-mapobj.map{it}       // return List
-mapobj.map{it.key}   // return List
-mapobj.map{it.value} // return List
+mapobj.map{it}          // return List
+mapobj.map{it.key}      // return List
+mapobj.map{it.value}    // return List
+mapobj.map{it.toPair()} // return List
 mapobj.flatMap{listOf(it)}                     // return List
+mapobj.flatMap{listOf(it.toPair())}              // return List
 mapobj.flatMap{listOf(Pair(it.key, it.value))} // return List
 mapobj.flatMap{listOf(it.key to it.value)}     // return List 
 mapobj.flatMap{listOf(it.key)}                 // return List
@@ -60,10 +62,12 @@ mmapobj.containsValue(1)
 mmapobj.keys
 mmapobj.values
 mmapobj.forEach{(key, value) -> println(key + ", " + value)}
-mmapobj.map{it}        // return List
-mmapobj.map{it.key}    // return List
-mmapobj.map{it.value}  // return List
+mmapobj.map{it}          // return List
+mmapobj.map{it.toPair()} // return List
+mmapobj.map{it.key}      // return List
+mmapobj.map{it.value}    // return List
 mmapobj.flatMap{listOf(it)}                     // return List
+mmapobj.flatMap{listOf(it.toPair())}            // return List
 mmapobj.flatMap{listOf(Pair(it.key, it.value))} // return List
 mmapobj.flatMap{listOf(it.key to it.value)}     // return List 
 mmapobj.flatMap{listOf(it.key)}                 // return List
