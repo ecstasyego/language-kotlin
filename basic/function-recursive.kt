@@ -8,7 +8,7 @@ tailrec fun denestingPair( nestedRow: Any, unnestedRow: MutableList<Any?> = muta
             unnestedRow.add(nestedRow.first)
         }
     } 
-    return unnestedRow
+    return unnestedRow.reversed().toMutableList()
 }
 
-denestingPair(1 to 2 to 3 to 4 to 5).reversed()
+denestingPair(1 to 2 to 3 to 4 to 5)
