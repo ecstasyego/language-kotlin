@@ -5,6 +5,13 @@ pair1.second
 pair2.first
 pair2.second
 
+Pair("key", "value") is Pair<*, *>
+Pair("key", "value") is Pair<Any, Any>
+Pair("key", "value") is Pair
+"key" to "value" is Pair<*, *>
+"key" to "value" is Pair<Any, Any>
+"key" to "value" is Pair
+
 // list of pair 
 val list0 = listOf(Pair("Alice", 90), Pair("Bob", 80), Pair("Charlie", 70))
 val (keys, values) = list0.unzip()
