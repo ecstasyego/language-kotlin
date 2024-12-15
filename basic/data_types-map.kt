@@ -73,3 +73,15 @@ dictionary["name"] = "John"
 val age = dictionary["age"] as Int
 val name = dictionary["name"] as String
 
+// dictionary with series
+import kotlin.random.Random
+val seriesDict = mutableMapOf<String, List<Any?>>(
+    "A" to (0 until 26).toList(),
+    "B" to (0 until 26).reversed().toList(),
+    "C" to (25 downTo 0).toList(),
+    "D" to List(26){Random.nextInt(0, 26)},
+    "E" to listOf("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"),
+)
+seriesDict["F"] = seriesDict["E"]!!.map{(it as String)?.lowercase()}
+seriesDict["G"] = seriesDict["A"]!!.map{ seriesDict["E"]!![(it as Int)] }
+seriesDict["H"] = seriesDict["A"]!!.map{ seriesDict["F"]!![(it as Int)] }
