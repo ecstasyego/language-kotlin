@@ -15,6 +15,20 @@ val map0 = mapOf(Pair("Alice", 90), Pair("Bob", 80), Pair("Charlie", 70))
 map0.keys.zip(map0.values).toMap()
 map0.map{it.toPair()}.toMap()
 
+// nested pair
+val nestedPair01: Pair<Pair<Pair<Pair<Int, String>, Boolean>, Double>, String> = Pair(Pair(Pair(1, "a"), true), 10.0) to "x"
+val nestedPair02: Pair<Pair<Pair<Pair<Int, String>, Boolean>, Double>, String> = 1 to "a" to true to 10.0 to "x"
+val result = listOf(
+    nestedPair01.first.first.first.first,  // 1
+    nestedPair01.first.first.first.second, // "a"
+    nestedPair01.first.first.second,       // true
+    nestedPair01.first.second,             // 10.0
+    nestedPair01.second                    // "x"
+)
+
+
+
+
 
 
 
