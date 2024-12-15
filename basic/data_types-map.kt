@@ -16,13 +16,18 @@ mapobj.containsValue(1)
 mapobj.keys
 mapobj.values
 mapobj.forEach{(key, value) -> println(key + ", " + value)}
-mapobj.map{it}
-mapobj.map{it.key}
-mapobj.map{it.value}
-mapobj.mapValues{it.key.uppercase()}
-mapobj.mapValues{it.value + 1}
-mapobj.filter{it.key == "three"}
-mapobj.filter{it.value % 2 == 0}
+mapobj.map{it}       // return List
+mapobj.map{it.key}   // return List
+mapobj.map{it.value} // return List
+mapobj.flatMap{listOf(it)}                     // return List
+mapobj.flatMap{listOf(Pair(it.key, it.value))} // return List
+mapobj.flatMap{listOf(it.key to it.value)}     // return List 
+mapobj.flatMap{listOf(it.key)}                 // return List
+mapobj.flatMap{listOf(it.value)}               // return List
+mapobj.mapValues{it.key.uppercase()} // return Map
+mapobj.mapValues{it.value + 1}       // return Map
+mapobj.filter{it.key == "three"} // return Map
+mapobj.filter{it.value % 2 == 0} // return Map
 mapobj.size
 mapobj.isEmpty()
 
@@ -55,13 +60,18 @@ mmapobj.containsValue(1)
 mmapobj.keys
 mmapobj.values
 mmapobj.forEach{(key, value) -> println(key + ", " + value)}
-mmapobj.map{it}
-mmapobj.map{it.key}
-mmapobj.map{it.value}
-mmapobj.mapValues{it.key.uppercase()}
-mmapobj.mapValues{it.value + 1}
-mmapobj.filter{it.key == "three"}
-mmapobj.filter{it.value % 2 == 0}
+mmapobj.map{it}        // return List
+mmapobj.map{it.key}    // return List
+mmapobj.map{it.value}  // return List
+mmapobj.flatMap{listOf(it)}                     // return List
+mmapobj.flatMap{listOf(Pair(it.key, it.value))} // return List
+mmapobj.flatMap{listOf(it.key to it.value)}     // return List 
+mmapobj.flatMap{listOf(it.key)}                 // return List
+mmapobj.flatMap{listOf(it.value)}               // return List
+mmapobj.mapValues{it.key.uppercase()} // return Map
+mmapobj.mapValues{it.value + 1}       // return Map
+mmapobj.filter{it.key == "three"}     // return Map
+mmapobj.filter{it.value % 2 == 0}     // return Map
 mmapobj.size
 mmapobj.clear()
 mmapobj.isEmpty()
