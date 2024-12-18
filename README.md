@@ -215,6 +215,23 @@ Supported libraries:
 ```kotlin
 %use dataframe, ktor-client, kandy
 ```
+```kotlin
+USE {
+    repositories {
+        // Any additional repositories. Maven central is already included
+        // maven("<url>")
+    }
+    dependencies {
+        // Here we add kandy plotting library
+        implementation("org.jetbrains.kotlinx:kandy-lets-plot:0.4.3")
+    }
+
+    // Sometimes library integration are loaded transitively and you don't want them to do it.
+    discardIntegrationTypeNameIf {
+        it.startsWith("org.jetbrains.kotlinx.dataframe.")
+    }
+}
+```
 
 - https://kotlin.github.io/dataframe/overview.html
 - https://kotlin.github.io/kandy/welcome.html
