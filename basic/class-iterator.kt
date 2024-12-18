@@ -1,3 +1,4 @@
+// Iterator examples
 generateSequence(Array(10){}){it}.takeWhile { it as Int <= 5 }
 generateSequence(List(10){}){it}.takeWhile { it as Int <= 5 }
 
