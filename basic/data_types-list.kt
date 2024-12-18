@@ -13,6 +13,7 @@ val listobj = listOf(1, 1, 2, 3, 4, 5, 5, 5)
 listobj.indexOf(3) // index
 listobj[0] // value
 listobj[1] // value
+listobj.indices
 listobj.subList(1,4)
 listobj.slice(1..<4)
 listobj.contains(1)
@@ -71,6 +72,7 @@ mlistobj[0] // value
 mlistobj[1] // value
 mlistobj[0] = -1
 mlistobj[1] = -2
+mlistobj.indices
 mlistobj.subList(1,4)
 mlistobj.slice(1..<4).toMutableList()
 mlistobj.contains(1)
