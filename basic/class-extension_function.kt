@@ -11,9 +11,30 @@ fun String.lastChar(): Char {
 
 
 
-class Structure(val parameter: Int=0)
+class Structure(val parameter: Int=1)
+
 fun Structure.addOne(): Int{
     return this.parameter + 1
 }
 
+fun Structure.add(integer:Int): Int{
+    return this.parameter + integer
+}
+
+fun <T: Int> Structure.sub(integer:T): Int{
+    return this.parameter - integer.toInt()
+}
+
+fun <T: Number> Structure.mul(integer:T): Double{
+    return this.parameter * integer.toDouble()
+}
+
+fun <T: Double> Structure.div(integer:T): Double{
+    return this.parameter / integer
+}
+
 Structure().addOne()
+Structure().add(10)
+Structure().sub(10)
+Structure().mul(10)
+Structure().div(10.0)
