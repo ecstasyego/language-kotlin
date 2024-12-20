@@ -13,6 +13,7 @@ class Structure03(param00:Int, param01:Double){
     val primary01:Double by lazy {param01}
 }
 
+// Not allowed primative data type
 class Structure04(param00:String, param01:String){
     lateinit var primary00:String 
     lateinit var primary01:String
@@ -23,6 +24,7 @@ class Structure04(param00:String, param01:String){
     }
 }
 
+// Not allowed primative data type
 class Structure05(param00:String, param01:String){
     lateinit var primary00:String 
     lateinit var primary01:String
