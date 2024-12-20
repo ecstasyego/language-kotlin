@@ -1,3 +1,5 @@
+// [1]construction > [2]initialization > [3]property
+
 class Structure00 {
     constructor(param00: Int) {}
 }
