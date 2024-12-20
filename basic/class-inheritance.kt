@@ -14,5 +14,6 @@ open class Parent02{
     init{property00}
 }
 class Child02:Parent02(){
-    init{}
+    val property01:Int by lazy{1} 
+    init{property01}
 }
