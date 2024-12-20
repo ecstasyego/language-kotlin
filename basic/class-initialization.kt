@@ -63,6 +63,18 @@ class Structure07{
     }    
 }
 
+
+// local variable
+class Structure08{
+    val property00 = 0
+    var property01 = 0
+    
+    init{
+        val localValue = 0
+        var localVariable = 0
+    }    
+}
+
 val obj00 = Structure00(1, 1)
 obj00.property00
 obj00.property01
@@ -94,4 +106,8 @@ obj06.property01
 val obj07 = Structure07()
 obj07.property00
 obj07.property01
+
+val obj08 = Structure08()
+obj08.property00
+obj08.property01
 
