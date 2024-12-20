@@ -25,6 +25,17 @@ class Structure05 {
     constructor(param00: String) {this.property00 = param00}
 }
 
+class Structure06(val property00:String){
+    lateinit var property01: String
+    constructor(property00: String, param01: String) : this(property00) {property01 = param01}
+}
+
+class Structure07(val property00:String){
+    lateinit var property01: String
+    constructor(property00: String, param01: String) : this(property00) {this.property01 = param01}
+}
+
+
 Structure00(1)
 Structure01(0)
 Structure01(0, "Hello")
@@ -36,4 +47,12 @@ Structure03(2)
 Structure03(2, "World")
 Structure03(2, "World", 2.718)
 Structure04("Hello").property00
-Structure04("World").property00
+Structure04("Hello").property00
+Structure05("World").property00
+Structure05("World").property00
+Structure06("X").property00
+Structure06("X", "Y").property00
+Structure06("X", "Y").property01
+Structure07("A").property00
+Structure07("A", "B").property00
+Structure07("A", "B").property01
