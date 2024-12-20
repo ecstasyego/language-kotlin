@@ -13,6 +13,21 @@ class Structure03(param00:Int, param01:Double){
     val primary01:Double by lazy {param01}
 }
 
+class Structure03_01(param00:Int, param01:Double){
+    val primary00:Int by lazy {param00}
+    val primary01:Double by lazy {param01}
+    init{}
+}
+
+class Structure03_02(param00:Int, param01:Double){
+    val primary00:Int by lazy {param00}
+    val primary01:Double by lazy {param01}
+    init{
+        primary00
+        primary01
+    }
+}
+
 // Not allowed primative data type
 class Structure04(param00:String, param01:String){
     lateinit var primary00:String 
@@ -80,6 +95,14 @@ obj02.primary01
 val obj03 = Structure03(1, -1.0)
 obj03.primary00
 obj03.primary01
+
+val obj03_01 = Structure03_01(1, -1.0)
+obj03_01.primary00
+obj03_01.primary01
+
+val obj03_02 = Structure03_01(1, -1.0)
+obj03_02.primary00
+obj03_02.primary01
 
 val obj04 = Structure04("A", "B")
 obj04.primary00
