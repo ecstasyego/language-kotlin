@@ -35,6 +35,10 @@ class Structure07(val property00:String){
     constructor(property00: String, param01: String) : this(property00) {this.property01 = param01}
 }
 
+class Structure08(val property00:String, val property01: String){
+    constructor(property00: String, property01: String, param02: String, param03: String) : this(property00, property01) {}
+}
+
 
 Structure00(1)
 Structure01(0)
@@ -56,3 +60,7 @@ Structure06("X", "Y").property01
 Structure07("A").property00
 Structure07("A", "B").property00
 Structure07("A", "B").property01
+Structure08("A", "B").property00
+Structure08("A", "B").property01
+Structure08("A", "B", "C", "D").property00
+Structure08("A", "B", "C", "D").property01
