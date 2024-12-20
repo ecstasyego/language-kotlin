@@ -1,3 +1,9 @@
+class Structure00(param00:Int){
+    constructor(param00:Float):this(param00.toInt()){}
+    constructor(param00:Double):this(param00.toInt()){}
+    constructor(param00:String):this(param00.toInt()){}
+}
+
 class Structure01(var a:String, var b:Double){
     constructor(a:String):this(a, 1.0){}
     constructor(b:Double):this("Y", b){}
@@ -19,6 +25,9 @@ class Structure04(val a:String){
     constructor(a: String, b: String) : this(a) {this.b = b}
 }
 
+Structure00(0)
+Structure00(0.0F)
+Structure00(0.0)
 Structure01("X")
 Structure01(b=3.0)
 Structure02("Y")
