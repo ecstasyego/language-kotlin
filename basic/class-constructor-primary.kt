@@ -33,13 +33,33 @@ class Structure05(param00:String, param01:String){
     }
 }
 
-
-class Structure06(val primary00:Int, val primary01:Double, param00:String, param01:Char){
+class Structure06(param00:Int=10, param01:Double=0.0){
+    val primary00:Int = param00
+    val primary01:Double = param01
 }
 
-class Structure07(param00:String, param01:Char){
-    val primary00:Int = 10
-    val primary01:Double = 0.0
+class Structure07(param00:Int=10, param01:Double=0.0){
+    var primary00:Int = param00
+    var primary01:Double = param01
+}
+
+// priority:   param00 & param01   >   primary00 & primary01
+class Structure08(var primary00:Int ,var primary01:Double, param00:Int, param01:Double){
+    init{
+        primary00 = param00 // reassign
+        primary01 = param01 // reassign
+    }
+}
+
+// priority:   primary00 & primary01   >   param00 & param01
+class Structure09(val primary00:Int, val primary01:Double, param00:Int, param01:Double){
+}
+
+
+class Structure10(param00:Int, param01:Double){
+    val primary00:Int = param00
+    val primary01:Double = param01
+    val primary02:String = "Hello, World!"
 }
 
 
@@ -59,7 +79,6 @@ val obj03 = Structure03(1, -1.0)
 obj03.primary00
 obj03.primary01
 
-
 val obj04 = Structure04("A", "B")
 obj04.primary00
 obj04.primary01
@@ -68,13 +87,24 @@ val obj05 = Structure05("A", "B")
 obj05.primary00
 obj05.primary01
 
-val obj06 = Structure06(1,2.0, "Hello, World!", 'A')
+val obj06 = Structure06()
 obj06.primary00
 obj06.primary01
 
-val obj07 = Structure07("Hello, World!", 'A')
+val obj07 = Structure07()
 obj07.primary00
 obj07.primary01
 
+val obj08 = Structure08(9999, 9999.0, 1, 0.0) // dummy values: 9999, 9999.0
+obj08.primary00
+obj08.primary01
 
 
+val obj09 = Structure09(1, 0.0, 9999, 9999.0) // dummy values: 9999, 9999.0
+obj09.primary00
+obj09.primary01
+
+val obj10 = Structure10(1, 0.0)
+obj10.primary00
+obj10.primary01
+obj10.primary02
