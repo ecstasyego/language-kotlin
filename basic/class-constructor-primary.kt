@@ -45,16 +45,16 @@ class Structure07(param00:Int=10, param01:Double=0.0){
     var primary01:Double = param01
 }
 
-// priority:   param00 & param01   >   primary00 & primary01
-class Structure08(var primary00:Int ,var primary01:Double, param00:Int, param01:Double){
+// priority:   param02 & param03   >   primary00 & primary01
+class Structure08(var primary00:Int ,var primary01:Double, param02:Int, param03:Double){
     init{
-        primary00 = param00 // reassign
-        primary01 = param01 // reassign
+        primary00 = param02 // reassign
+        primary01 = param03 // reassign
     }
 }
 
-// priority:   primary00 & primary01   >   param00 & param01
-class Structure09(val primary00:Int, val primary01:Double, param00:Int, param01:Double){
+// priority:   primary00 & primary01   >   param02 & param03
+class Structure09(val primary00:Int, val primary01:Double, param02:Int, param03:Double){
 }
 
 
