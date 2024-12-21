@@ -1,3 +1,4 @@
+class Structure constructor(val primary00:Int = 10, val primary01:Double = 0.0)
 
 class Structure00{
     val primary00:Int = 10
