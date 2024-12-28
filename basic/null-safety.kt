@@ -8,8 +8,9 @@ var variable04:String? = null ?: "World"
 true?.toString()
 null?.toString()
 
-
 // Elvis(?:)
+true?: 0
+null?: 0
 true?.toString() ?: 0
 null?.toString() ?: 0
 
