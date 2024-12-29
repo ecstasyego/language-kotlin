@@ -4,6 +4,11 @@ var variable02:String = "Hello"
 var variable03:String? = null
 var variable04:String? = null ?: "World"
 
+// Safe Casting(?)
+1 as Int // 1
+1 as? Double // null
+1 as? String // null
+
 // Safe Call(?.)
 true?.toString()
 null?.toString()
